@@ -1,6 +1,6 @@
-import React from "react";
 import Header from "./components/Landing-Page/Header/Header";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HeroSection from "./components/Landing-Page/Hero-Section/HeroSection";
 
 const routes = createBrowserRouter([
   {
@@ -8,6 +8,7 @@ const routes = createBrowserRouter([
     element: (
       <>
         <Header />
+        <HeroSection />
       </>
     ),
   },
