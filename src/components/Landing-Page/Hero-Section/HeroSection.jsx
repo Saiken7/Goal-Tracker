@@ -5,15 +5,15 @@ const HeroSection = () => {
     <main className="hero-main">
       <section className="hero-section">
         <div className="text-section">
-          <h1>
+          <p className="hero-text">
             Plan <strong>Smarter</strong>, Achieve <strong>Faster</strong>
-          </h1>
-          <h1>
+          </p>
+          <p className="hero-text">
             Take <strong>Control</strong> of Your <strong>Goals</strong>
-          </h1>
-          <h1>
+          </p>
+          <p className="hero-text">
             and <strong>Time</strong>.
-          </h1>
+          </p>
           <p className="subtext">
             Track goals, schedule your day, and stay in control of your
             progress.
