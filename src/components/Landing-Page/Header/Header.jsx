@@ -25,7 +25,7 @@ const Header = () => {
           <img src="src\assets\Drop_Down_Arrow.svg" />
         </div>
 
-        <div className="platforms" onClick={handlePlatform}>
+        <div className="platforms" onMouseEnter={handlePlatform}>
           <p>Platforms</p>
           <img src="src\assets\Drop_Down_Arrow.svg" />
           <div className="pane">
