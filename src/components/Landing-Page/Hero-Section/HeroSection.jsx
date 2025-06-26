@@ -27,6 +27,42 @@ const HeroSection = () => {
           <img src="src/assets/Hero.jpg" alt="Hero Illustration" />
         </div>
       </section>
+      {/* about section */}
+      <section className="about">
+        <div className="about-card">
+          <h2
+            style={{ textAlign: "center", padding: "10px", marginTop: "10px" }}
+          >
+            About
+          </h2>
+          <div className="card-text">
+            <div id="text">
+              <p styles={{ marginTop: "20px" }}>
+                <b>SmartLife Hub</b> is your personal productivity companion —
+                designed to help you stay organized, focused, and in control of
+                your goals and time. Whether you're aiming to build better
+                habits, complete long-term projects, or simply make your days
+                more intentional, SmartLife Hub brings everything together in
+                one clean, intuitive space.
+              </p>
+            </div>
+            <img src="src\assets\About.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      {/* Tools and Features section */}
+      <section className="display-features">
+        <div className="two-features">
+          <div className="box">1</div>
+          <div className="box">2</div>
+        </div>
+        <div className="wide-box">1</div>
+      </section>
+
+      {/* Tagline */}
+      <section id="tagline">
+        <p>Everything you need to stay focused, in one dashboard</p>
+      </section>
     </main>
   );
 };
