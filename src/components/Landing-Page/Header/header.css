@@ -39,6 +39,7 @@
 
 .platforms {
   display: flex;
+  position: relative;
   align-items: center;
   margin-top: 4px;
   font-size: small;
@@ -65,16 +66,19 @@
   flex-wrap: wrap;
   justify-content: space-around;
   position: absolute;
+  top: 100%;
+  left: 0;
   opacity: 0;
+  pointer-events: none;
   background-color: white;
   width: 400px;
   height: 200px;
   gap: 10px;
   border: 1px solid #d3d3d3;
-  top: 55px;
   border-radius: 8px;
   padding: 10px;
-  transition: 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  z-index: 1001;
 }
 
 .pane-items {
@@ -133,10 +137,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px;
   justify-content: flex-start;
   animation: fadeDown 0.3s ease-in-out;
+  overflow: visible;
 }
 
 .sticky-navbar .links {
