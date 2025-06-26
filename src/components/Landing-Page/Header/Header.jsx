@@ -43,12 +43,48 @@ const Header = () => {
           </NavLink>
           <div className="features">
             <p>Features</p>
-            <img src="src/assets/Drop_Down_Arrow.svg" />
           </div>
           <div className="platforms" onMouseEnter={handlePlatform}>
             <p>Platforms</p>
             <img src="src/assets/Drop_Down_Arrow.svg" />
-            <div className="pane">{/* Add Pane Items */}</div>
+            <div className="pane">
+              {/* Add Pane Items */}
+              {/* Windows */}
+              <div className="pane-items">
+                <img src="src\assets\windows.svg" alt="" />
+                <div className="pane-title">
+                  <p>Windows</p>
+                  <p className="p-text">Coming Soon..</p>
+                </div>
+              </div>
+
+              {/* Web */}
+              <div className="pane-items">
+                <img src="src\assets\web.svg" />
+                <div className="pane-title">
+                  <p>Web Application</p>
+                  <p className="p-text">Currently Using</p>
+                </div>
+              </div>
+
+              {/* Android */}
+              <div className="pane-items">
+                <img src="src\assets\android.svg" alt="" />
+                <div className="pane-title">
+                  <p>Android</p>
+                  <p className="p-text">Coming Soon..</p>
+                </div>
+              </div>
+
+              {/* iOS */}
+              <div className="pane-items">
+                <img src="src\assets\ios.svg" />
+                <div className="pane-title">
+                  <p>Apple App</p>
+                  <p className="p-text">Coming Soon</p>
+                </div>
+              </div>
+            </div>
           </div>
           <p id="about">About</p>
         </section>
