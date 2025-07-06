@@ -68,6 +68,7 @@
 }
 
 #footer-text {
-  font-size: x-large;
+  font-size: large;
   font-weight: 600;
+  margin-left: 6px;
 }
