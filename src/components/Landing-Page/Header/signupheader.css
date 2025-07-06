@@ -1,0 +1,12 @@
+.signup-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.signup-header p {
+  font-size: x-large;
+  font-weight: 600;
+  margin-left: 50px;
+}
