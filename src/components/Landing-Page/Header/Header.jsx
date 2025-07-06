@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
 import { useEffect, useState } from "react";
 
 const Header = () => {
   const [platformsVisible, setPlatformsVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +83,14 @@ const Header = () => {
         <NavLink to="/" className="signin-btn">
           Sign-in
         </NavLink>
-        <button className="get-started-btn">GET STARTED</button>
+        <button
+          className="get-started-btn"
+          onClick={() => {
+            navigate("/signup");
+          }}
+        >
+          GET STARTED
+        </button>
       </section>
     </>
   );
