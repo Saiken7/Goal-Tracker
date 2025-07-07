@@ -125,6 +125,10 @@
   transform: scale(1.01);
 }
 
+.signin-btn:hover {
+  color: gray;
+}
+
 /* New Navbar Classes */
 .sticky-navbar {
   position: sticky;
