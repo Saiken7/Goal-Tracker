@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./herosection.css";
-
+import {} from "../../../utils/scrollUtils.js";
 const HeroSection = () => {
   const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
       </section>
       {/* about section */}
-      <section className="about">
+      <section id="about-scroll" className="about">
         <div className="about-card">
           <h2
             style={{ textAlign: "center", padding: "10px", marginTop: "10px" }}
@@ -61,7 +61,7 @@ const HeroSection = () => {
         </div>
       </section>
       {/* Tools and Features section */}
-      <section className="display-features">
+      <section id="features-scroll" className="display-features">
         <div className="two-features">
           <div className="box">1</div>
           <div className="box">2</div>

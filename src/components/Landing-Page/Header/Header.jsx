@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
 import { useEffect, useState } from "react";
+import { scrollToAbout, scrollToFeatures } from "../../../utils/scrollUtils.js";
 
 const Header = () => {
   const [platformsVisible, setPlatformsVisible] = useState(false);
@@ -65,7 +66,7 @@ const Header = () => {
         <NavLink to="/" className="logo">
           Logo
         </NavLink>
-        <div className="features">
+        <div className="features" onClick={scrollToFeatures}>
           <p>Features</p>
         </div>
         <div
@@ -77,7 +78,9 @@ const Header = () => {
           <img src="src/assets/Drop_Down_Arrow.svg" alt="Dropdown" />
           <Pane />
         </div>
-        <p id="about">About</p>
+        <p id="about" onClick={scrollToAbout}>
+          About
+        </p>
       </section>
       <section className="login-section">
         <NavLink to="/login" className="signin-btn">
