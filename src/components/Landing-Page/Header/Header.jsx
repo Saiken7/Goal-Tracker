@@ -1,7 +1,11 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
 import { useEffect, useState } from "react";
-import { scrollToAbout, scrollToFeatures } from "../../../utils/scrollUtils.js";
+import {
+  scrollToAbout,
+  scrollToFeatures,
+  scrollToHero,
+} from "../../../utils/scrollUtils.js";
 
 const Header = () => {
   const [platformsVisible, setPlatformsVisible] = useState(false);
@@ -63,7 +67,12 @@ const Header = () => {
   const NavbarContent = () => (
     <>
       <section className="option-section">
-        <NavLink to="/" className="logo">
+        <NavLink
+          to="/"
+          className="logo"
+          id="hero-scroll"
+          onClick={scrollToHero}
+        >
           Logo
         </NavLink>
         <div className="features" onClick={scrollToFeatures}>
