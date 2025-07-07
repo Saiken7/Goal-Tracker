@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./herosection.css";
-import {} from "../../../utils/scrollUtils.js";
 const HeroSection = () => {
   const navigate = useNavigate();
 
