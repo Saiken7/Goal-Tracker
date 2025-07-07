@@ -80,7 +80,7 @@ const Header = () => {
         <p id="about">About</p>
       </section>
       <section className="login-section">
-        <NavLink to="/" className="signin-btn">
+        <NavLink to="/login" className="signin-btn">
           Sign-in
         </NavLink>
         <button
