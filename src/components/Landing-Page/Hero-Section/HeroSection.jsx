@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "./herosection.css";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    window.open("https://github.com/Saiken7/Goal-Tracker", "_blank");
+  };
   return (
     <main className="hero-main">
       <section className="hero-section">
@@ -19,8 +25,12 @@ const HeroSection = () => {
             progress.
           </p>
           <div className="hero-buttons">
-            <button className="primary-btn">GET STARTED</button>
-            <button className="secondary-btn">VISIT GITHUB</button>
+            <button className="primary-btn" onClick={() => navigate("/signup")}>
+              GET STARTED
+            </button>
+            <button className="secondary-btn" onClick={handleRedirect}>
+              VISIT GITHUB
+            </button>
           </div>
         </div>
         <div className="image-section">
