@@ -35,7 +35,10 @@ const Signup = () => {
           <button className="signup-btn">Signup</button>
           <p id="redirect-text">
             If you already have an account. Please{" "}
-            <Link id="redirect-link">login</Link> here
+            <Link id="redirect-link" to={"/login"}>
+              login
+            </Link>{" "}
+            here
           </p>
         </form>
       </div>
