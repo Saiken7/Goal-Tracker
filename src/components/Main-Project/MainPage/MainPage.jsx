@@ -1,6 +1,7 @@
 import "./mainpage.css";
-import "../PageComponents/Sidebar";
 import { Outlet } from "react-router-dom";
+import Sidebar from "../PageComponents/Sidebar";
+import OptionBar from "../PageComponents/OptionBar";
 const MainPage = () => {
   return (
     <main>
