@@ -1,5 +1,14 @@
 import "./sidebar.css";
+import { useState } from "react";
+import { MdArrowDropDown } from "react-icons/md";
+import { MdOutlineArrowDropUp } from "react-icons/md";
 const Sidebar = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <section className="sidebar-main">
       {/* Profile */}
@@ -13,12 +22,14 @@ const Sidebar = () => {
           <img src="src\assets\home.svg" alt="Go to Dashboard" />
           <p>Dashboard</p>
         </div>
-        <div className="options">
+        <div className="options" onClick={handleToggle}>
           <img src="src\assets\workspaces.svg" alt="Your Workspaces" />
           <p>Workspaces</p>
-          <div className="drop-down">
-            <img src="src\assets\Drop_Down_Arrow.svg" alt="Show Workspaces" />
-          </div>
+          {toggle ? (
+            <MdOutlineArrowDropUp className="drop-down" />
+          ) : (
+            <MdArrowDropDown className="drop-down" />
+          )}
         </div>
         {/* Work Pending on Drop Down Menu for Workspaces, Settings and Footer */}
       </div>
