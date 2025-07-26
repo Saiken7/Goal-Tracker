@@ -4,7 +4,7 @@ import Sidebar from "../PageComponents/Sidebar";
 import OptionBar from "../PageComponents/OptionBar";
 const MainPage = () => {
   return (
-    <main>
+    <main className="main-page">
       <Sidebar />
       <OptionBar />
       <Outlet />
